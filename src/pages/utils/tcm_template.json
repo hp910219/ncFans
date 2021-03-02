@@ -1,0 +1,602 @@
+[{
+  "title": "普世版",
+  "items": [{
+    "title": "基本信息",
+    "items": [{
+      "text": "纳排标准"
+    }, {
+      "text": "人口信息"
+    }, {
+      "text": "病史信息",
+      "labelCol": {
+        "span": 3
+      },
+      "wrapperCol": {
+        "span": 18
+      },
+      "marginBottom": "20px",
+      "input_items": [{
+        "label": "起病时间",
+        "tag": "datepicker",
+        "rule": ""
+      }, {
+        "label": "确诊时间",
+        "field": "time2",
+        "tag": "datepicker"
+      }, {
+        "label": "既往史",
+        "field": "native",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": "无",
+        "radio_type": "btn",
+        "items": [{
+          "value": "无"
+        }, {
+          "value": "脑卒中"
+        }, {
+          "value": "冠心病"
+        }, {
+          "value": "糖尿病"
+        }, {
+          "value": "慢性阻塞性肺病"
+        }, {
+          "value": "高血压"
+        }, {
+          "value": "心律失常"
+        }, {
+          "value": "慢性肾脏病"
+        }, {
+          "value": "其他"
+        }]
+      }, {
+        "label": "个人史",
+        "is_group": true,
+        "items": [{
+          "label": "吸烟史",
+          "field": "smoke",
+          "tag": "radio",
+          "size": "small",
+          "initialValue": "无",
+          "radio_type": "btn",
+          "items": [{
+            "value": "无"
+          }, {
+            "value": "有"
+          }],
+          "span": 5
+        }, {
+          "label": "饮酒史",
+          "field": "drink",
+          "tag": "radio",
+          "size": "small",
+          "initialValue": "无",
+          "radio_type": "btn",
+          "items": [{
+            "value": "无"
+          }, {
+            "value": "有"
+          }],
+          "span": 5
+        }, {
+          "label": "其他",
+          "field": "personal_history_other",
+          "span": 10,
+          "size": "small"
+        }]
+      }, {
+        "label": "家族史",
+        "field": "ocupation",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": "无",
+        "radio_type": "btn",
+        "items": [{
+          "value": "无"
+        }, {
+          "value": "脑卒中"
+        }, {
+          "value": "冠心病"
+        }, {
+          "value": "心率失常"
+        }, {
+          "value": "糖尿病"
+        }, {
+          "value": "高血压"
+        }, {
+          "value": "高脂血症"
+        }, {
+          "value": "其他"
+        }]
+      }, {
+        "label": "药物过敏史",
+        "is_group": true,
+        "items": [{
+          "field": "height",
+          "tag": "radio",
+          "size": "small",
+          "initialValue": "无",
+          "radio_type": "btn",
+          "items": [{
+            "value": "无"
+          }, {
+            "value": "有"
+          }],
+          "span": 3
+        }, {
+          "label": "如有",
+          "field": "weight",
+          "placeholder": "请详细记载",
+          "span": 6,
+          "size": "small"
+        }]
+      }]
+    }]
+  }, {
+    "title": "辩证诊疗措施",
+    "items": [{
+      "text": "四诊信息",
+      "labelCol": {
+        "span": 2
+      },
+      "input_items": [{
+        "label": "主诉",
+        "field": "time1"
+      }, {
+        "label": "现病史",
+        "field": "time2",
+        "tag": "textarea",
+        "rows": 8
+      }, {
+        "label": "刻下症见",
+        "field": "time2",
+        "tag": "textarea",
+        "rows": 5
+      }, {
+        "label": "舌象",
+        "field": "time2",
+        "tag": "textarea",
+        "placeholder": "请填写（舌色、舌形、舌态、苔色、苔质、舌下脉络）"
+      }, {
+        "label": "脉象",
+        "field": "time2"
+      }, {
+        "label": "中医诊断",
+        "field": "time2",
+        "tag": "textarea",
+        "rows": 5
+      }]
+    }, {
+      "text": "中医症候诊断"
+    }, {
+      "text": "处方信息",
+      "labelCol": {
+        "span": 2
+      },
+      "input_items": [{
+        "label": "治法",
+        "field": "time1"
+      }, {
+        "label": "方剂",
+        "field": "time2"
+      }, {
+        "label": "R",
+        "field": "time2",
+        "tag": "textarea",
+        "placeholder": "请填写（君药和核心药加下划线）",
+        "rows": 10
+      }, {
+        "label": "中成药",
+        "field": "time2",
+        "placeholder": ""
+      }, {
+        "label": "西药",
+        "field": "time2"
+      }, {
+        "label": "其他疗法",
+        "field": "time2",
+        "tag": "textarea"
+      }, {
+        "label": "医嘱",
+        "field": "native",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": "无",
+        "radio_type": "btn",
+        "items": [{
+          "value": "饮食"
+        }, {
+          "value": "起居"
+        }, {
+          "value": "情志"
+        }, {
+          "value": "其他"
+        }]
+      }, {
+        "label": "具体",
+        "field": "time2",
+        "tag": "textarea",
+        "rows": 4
+      }]
+    }, {
+      "text": "弟子转录",
+      "input_items": [{
+        "label": "名老中医点评精粹",
+        "field": "time2",
+        "tag": "textarea",
+        "placeholder": "该病的难点、治疗步骤、核心处方和用药、主要解决的问题等",
+        "row": 10
+      }, {
+        "label": "传承弟子心得",
+        "field": "time2",
+        "tag": "textarea",
+        "rows": 10
+      }, {
+        "label": "传承弟子录音",
+        "field": "time2",
+        "tag": "upload",
+        "name": "file"
+      }, {
+        "label": "传承弟子点评",
+        "field": "time2",
+        "tag": "textarea"
+      }]
+    }]
+  }, {
+    "title": "影像采集",
+    "items": [{
+      "text": "舌像照片采集",
+      "labelCol": {
+        "span": 24
+      },
+      "wrapperCol": {
+        "span": 16
+      },
+      "style": {
+        "marginTop": "20px"
+      },
+      "input_items": [{
+        "label": " ",
+        "field": "time2",
+        "tag": "upload",
+        "name": "file"
+      }]
+    }, {
+      "text": "实验室检查信息",
+      "labelCol": {
+        "span": 24
+      },
+      "wrapperCol": {
+        "span": 12
+      },
+      "input_items": [{
+        "label": "请上传相关检查及实验室结果",
+        "field": "time2",
+        "tag": "upload",
+        "name": "file"
+      }]
+    }, {
+      "text": "合并用药",
+      "labelCol": {
+        "span": 4
+      },
+      "wrapperCol": {
+        "span": 12
+      },
+      "input_items": [{
+        "label": "是否合并使用西药？",
+        "field": "en",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": false,
+        "items": [{
+          "value": true,
+          "text": "是"
+        }, {
+          "value": false,
+          "text": "否"
+        }]
+      }, {
+        "label": "请记录具体药物名称",
+        "field": "time2"
+      }, {
+        "label": "是否合并中成药？",
+        "field": "cn",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": false,
+        "items": [{
+          "value": true,
+          "text": "是"
+        }, {
+          "value": false,
+          "text": "否"
+        }]
+      }, {
+        "label": "请记录具体药物名称",
+        "field": "time2"
+      }, {
+        "label": "是否合并针灸疗法？",
+        "field": "zhenjiu",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": false,
+        "items": [{
+          "value": true,
+          "text": "是"
+        }, {
+          "value": false,
+          "text": "否"
+        }]
+      }]
+    }]
+  }, {
+    "title": "疗效评价",
+    "items": [{
+      "text": "MYMOP",
+      "labelCol": {
+        "span": 24
+      },
+      "input_items": [{
+        "label": "选择一个或两个最困扰你的症状（身体上的或精神上的都可以）填写",
+        "required": true,
+        "is_group": true,
+        "items": [{
+          "field": "time2",
+          "span": 13
+        }, {
+          "field": "time2",
+          "span": 13
+        }]
+      }, {
+        "label": "现在考虑一周以来症状1的严重程度（0 分为最佳状态，6 分为最差状况，请您根据自己的实际情况评分）。",
+        "field": "time2",
+        "tag": "rate",
+        "required": true,
+        "character": {
+          "key": null,
+          "ref": null,
+          "props": {
+            "type": "frown"
+          },
+          "_owner": null,
+          "_store": {}
+        },
+        "tooltips": ["1分", "2分", "3分", "4分", "5分", "6分"],
+        "count": 6
+      }, {
+        "label": "现在考虑一周以来症状2的严重程度（0 分为最佳状态，6 分为最差状况，请您根据自己的实际情况评分）。",
+        "field": "time2",
+        "tag": "rate",
+        "required": true,
+        "character": {
+          "key": null,
+          "ref": null,
+          "props": {
+            "type": "frown"
+          },
+          "_owner": null,
+          "_store": {}
+        },
+        "tooltips": ["1分", "2分", "3分", "4分", "5分", "6分"],
+        "count": 6
+      }, {
+        "label": "现在选择一项对你而言很重要的活动（身体上、社会上或精神上的），或由你的疾病导致很难或者不能完成的活动，填写在填空框里",
+        "required": true,
+        "field": "time2"
+      }, {
+        "label": "根据一周以来的好坏程度（0 分为最佳状态，6 分为最差状况，请您根据自己的实际情况评分）",
+        "field": "time2",
+        "tag": "rate",
+        "required": true,
+        "character": {
+          "key": null,
+          "ref": null,
+          "props": {
+            "type": "frown"
+          },
+          "_owner": null,
+          "_store": {}
+        },
+        "tooltips": ["1分", "2分", "3分", "4分", "5分", "6分"],
+        "count": 6
+      }, {
+        "label": "最后，您如何评价自己一周以来总体的健康状况（0 分为最佳状态，6 分为最差状况，请您根据自己的实际情况评分）",
+        "field": "time2",
+        "tag": "rate",
+        "required": true,
+        "character": {
+          "key": null,
+          "ref": null,
+          "props": {
+            "type": "frown"
+          },
+          "_owner": null,
+          "_store": {}
+        },
+        "tooltips": ["1分", "2分", "3分", "4分", "5分", "6分"],
+        "count": 6
+      }, {
+        "required": true,
+        "label": "不论是连续出现还是间断出现，您存在症状1有多久了？",
+        "field": "zhenjiu",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": false,
+        "items": [{
+          "value": "0-1个月"
+        }, {
+          "value": "1-3个月"
+        }, {
+          "value": "1-3个月"
+        }, {
+          "value": "3个月-一年"
+        }, {
+          "value": "一年-五年"
+        }, {
+          "value": "五年以上"
+        }]
+      }, {
+        "label": "减少药量或者停药对您来说？",
+        "field": "zhenjiu",
+        "tag": "radio",
+        "size": "small",
+        "initialValue": false,
+        "items": [{
+          "value": "不重要"
+        }, {
+          "value": "有点重要"
+        }, {
+          "value": "非常重要"
+        }]
+      }, {
+        "label": "请写出最想减量或者停药的药名及每天/周用量",
+        "required": true,
+        "field": "time2"
+      }]
+    }, {
+      "text": "SF-36",
+      "labelCol": {
+        "span": 24
+      },
+      "wrapperCol": {
+        "span": 24
+      },
+      "input_items": [{
+        "label": "总体来说，您的健康状况",
+        "required": true,
+        "field": "zhenjiu",
+        "tag": "radio",
+        "initialValue": false,
+        "items": [{
+          "value": "非常好"
+        }, {
+          "value": "很好"
+        }, {
+          "value": "好"
+        }, {
+          "value": "一般"
+        }, {
+          "value": "差"
+        }]
+      }, {
+        "label": "跟一年以前比您觉得自己的健康状况是",
+        "required": true,
+        "field": "zhenjiu",
+        "tag": "radio",
+        "initialValue": false,
+        "items": [{
+          "value": "比一年前好多了"
+        }, {
+          "value": "比一年前好一些"
+        }, {
+          "value": "跟一年前差不多"
+        }, {
+          "value": "比一年差一些"
+        }, {
+          "value": "比一年前差多了"
+        }]
+      }, {
+        "h1": "健康和日常活动",
+        "header": "以下这些问题都和日常活动有关。请你想一想，您的健康状况是否限制了这些活动？如果有限制，程度如何？",
+        "is_list": true,
+        "extra": ["限制很大", "有些限制", "毫无限制"],
+        "data": ["重体力活动。如跑步举重、参加剧烈运动等", "适度的活动。如移动桌子、打太极拳、做简单体操等", "手提日用品。如买菜、购物等", "上几层楼梯"]
+      }, {
+        "is_list": true,
+        "extra": ["限制很大", "有些限制", "毫无限制"],
+        "data": ["上一层楼梯", "弯腰、屈膝、下蹲", "步行1500米以上的路程", "步行1000米的路程", "步行100米的路程", "自己洗澡、穿衣"]
+      }, {
+        "label": "在过去的4个星期里，您的工作和日常活动有无因为身体健康的原因而出现以下这些问题？",
+        "is_list": true,
+        "extra": ["是", "不是"],
+        "data": ["减少了工作或其他活动时间？", "本来想要做的事情只能完成一部分？", "想要干的工作或活动种类收到限制？", "完成工作或其他活动困难多（比如需要额外的努力）？"]
+      }, {
+        "label": "在过去的4个星期里，您的工作和日常活动有无因为情绪的原因（如压抑或忧虑）而出现以下这些问题？",
+        "is_list": true,
+        "extra": ["是", "不是"],
+        "data": ["减少了工作或其他活动时间？", "本来想要做的事情只能完成一部分？", "干事情不如平时仔细？"]
+      }, {
+        "label": "在过去4个星期里，您的健康或情绪不好在多大程度上影响了您与家人、朋友、邻居或集体的正常社会交往？",
+        "required": false,
+        "field": "zhenjiu",
+        "tag": "radio",
+        "initialValue": false,
+        "items": [{
+          "value": "完全没有影响"
+        }, {
+          "value": "有一点影响"
+        }, {
+          "value": "中等影响"
+        }, {
+          "value": "影响很大"
+        }, {
+          "value": "影响非常大"
+        }]
+      }, {
+        "label": "在过去4个星期里，您有身体疼痛吗？",
+        "required": false,
+        "field": "zhenjiu",
+        "tag": "radio",
+        "initialValue": false,
+        "items": [{
+          "value": "完全没有疼痛"
+        }, {
+          "value": "有一点疼痛"
+        }, {
+          "value": "中等疼痛"
+        }, {
+          "value": "严重疼痛"
+        }, {
+          "value": "很严重疼痛"
+        }]
+      }, {
+        "label": "在过去4个星期里，您的身体疼痛影响了您的工作和家务？",
+        "required": false,
+        "field": "zhenjiu",
+        "tag": "radio",
+        "initialValue": false,
+        "items": [{
+          "value": "完全没有影响"
+        }, {
+          "value": "有一点影响"
+        }, {
+          "value": "中等影响"
+        }, {
+          "value": "影响很大"
+        }, {
+          "value": "影响非常大"
+        }]
+      }, {
+        "label": "以下这些问题是关于过去1个月里您自己的感觉，对每一条问题所说的事情，您的情况是什么样的？",
+        "is_list": true,
+        "extra": ["所有的时间", "大部分时间", "比较多时间", "一部分时间", "小部分时间", "没有这种感觉"],
+        "data": ["您觉得生活充实？", "您是一个敏感的人？", "您的心理很平静？"]
+      }]
+    }, {
+      "text": "SAS/SDS",
+      "labelCol": {
+        "span": 8
+      },
+      "input_items": [{
+        "h1": "",
+        "header": "请根据您的感觉来进行评分",
+        "is_list": true,
+        "extra": ["无", "有时", "经常", "持续"],
+        "data": ["我感到情绪沮丧，郁闷", "我感到早上心情最好", "我要哭或想哭", "我夜间睡眠不好", "我吃饭像平时一样多"]
+      }, {
+        "is_list": true,
+        "extra": ["无", "有时", "经常", "持续"],
+        "data": ["我的性功能正常", "我感到体重减轻", "我为便秘烦恼", "我的心跳比平时快", "我无故感到疲劳"]
+      }, {
+        "is_list": true,
+        "extra": ["无", "有时", "经常", "持续"],
+        "data": ["我的头脑象往常一样清楚", "我做事情象平时一样不感到困难", "我坐卧不安，难以保持平静", "我对未来感到有希望", "我比平时更容易激怒"]
+      }, {
+        "is_list": true,
+        "extra": ["无", "有时", "经常", "持续"],
+        "data": ["我觉得决定什么事情很容易", "我感到自己是有用和不可缺少的人", "我的生活很有意义", "假如我死了别人会过得更好", "我仍旧喜爱自己平时喜爱的东西"]
+      }]
+    }]
+  }]
+}]
